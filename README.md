@@ -1,4 +1,4 @@
-# DrupalCamp Spain 2025
+# DrupalCamp Spain Base
 
 ## Initial setup
 
@@ -42,5 +42,3 @@ mkdir web/sites/default/files/translations
 ### Branches
 
 - `main` is the source of truth, the branch with the production code, always.
-- `dev` is the development branch, any new functionality goes there.
-- `dev` is then merged to `main` via PR when the changes are accepted.
