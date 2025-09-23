@@ -1,7 +1,6 @@
-label: default
-date_format: 'D, M j Y'
+label: 'Time Only'
 time_format: 'g:ia'
-time_hour_format: ga
+time_hour_format: 'g:ia'
 allday_label: 'All day'
 separator: ' - '
 join: ', '

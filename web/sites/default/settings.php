@@ -850,7 +850,8 @@ $settings['config_exclude_modules'] = [
 if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev.php')) {
   include __DIR__ . '/settings.ddev.php';
   // ddev drush -y en stage_file_proxy
-  $config['stage_file_proxy.settings']['origin'] = 'https://2025.drupalcamp.es';
+  // drupalcamp.es points to the current's year edition (eg: 2025.drupalcamp.es).
+  $config['stage_file_proxy.settings']['origin'] = 'https://drupalcamp.es';
 }
 // Non-local projects can only change configuration via "drush".
 elseif (PHP_SAPI !== 'cli') {

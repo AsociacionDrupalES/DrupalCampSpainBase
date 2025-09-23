@@ -25,8 +25,6 @@ ddev drush uli
 ddev drush -y en stage_file_proxy
 ```
 
-From now on you'd be able to access to https://dcamp2025.ddev.site
-
 ## Translations
 
 If the folder `web/sites/default/files/translations` is not created,
