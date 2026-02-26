@@ -10,7 +10,7 @@ ddev start
 ddev composer install
 
 # Import the DB:
-ddev import-db --file=database-file.sql.gz
+ddev import-db --file=assets/database.sql.gz
 
 # No database, no problem (WIP):
 # ddev drush -y site:install --existing-config -v
