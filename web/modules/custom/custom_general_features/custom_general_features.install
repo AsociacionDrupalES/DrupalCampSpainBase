@@ -43,10 +43,13 @@ function custom_general_features_update_11001(&$sandbox): string {
     // Count total entities to process across all types.
     $sandbox['total'] = 0;
     foreach ($sandbox['entity_types'] as $info) {
-      $sandbox['total'] += (int) $db->query(
-        "SELECT COUNT(DISTINCT {$info['id_col']}) FROM {{$info['table']}} WHERE langcode = :lang",
-        [':lang' => $lang]
-      )->fetchField();
+      $sandbox['total'] += (int) $db->select($info['table'], 't')
+        ->fields('t', [$info['id_col']])
+        ->condition('t.langcode', $lang)
+        ->distinct()
+        ->countQuery()
+        ->execute()
+        ->fetchField();
     }
 
     $sandbox['processed'] = 0;
@@ -85,32 +88,24 @@ function custom_general_features_update_11001(&$sandbox): string {
       $entity = $entities[$id] ?? NULL;
 
       if ($entity === NULL) {
-        $db->delete($info['table'])
-          ->condition($info['id_col'], $id)
-          ->condition('langcode', $lang)
-          ->execute();
+        $entity = $storage->load($id);
+        if ($entity !== NULL) {
+          $entity->delete();
+        }
       }
       elseif ($entity_type_id === 'path_alias') {
+        // Path aliases store langcode as a direct field, not via Drupal's
+        // translation API, so hasTranslation() does not apply. Delete directly.
         $entity->delete();
       }
       elseif ($entity->hasTranslation($lang)) {
         if ($entity->getUntranslated()->language()->getId() === $lang) {
-          // gl is the default language: removeTranslation() would throw.
-          // Delete the whole entity instead.
           $entity->delete();
         }
         else {
           $entity->removeTranslation($lang);
           $entity->save();
         }
-      }
-      else {
-        // Entity loaded but Entity API does not see a gl translation.
-        // Remove the stale DB row directly.
-        $db->delete($info['table'])
-          ->condition($info['id_col'], $id)
-          ->condition('langcode', $lang)
-          ->execute();
       }
 
       $sandbox['processed']++;
