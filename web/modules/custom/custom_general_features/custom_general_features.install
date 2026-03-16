@@ -5,12 +5,15 @@
  * Install, update and uninstall functions for custom_general_features module.
  */
 
+use Drupal\Core\Entity\ContentEntityInterface;
+
 /**
  * Remove all Galician (gl) translations from content entities.
  *
  * Affected entity types: node, paragraph, taxonomy_term, menu_link_content,
  * path_alias.
  */
+
 function custom_general_features_update_11001(&$sandbox): string {
   $lang = 'gl';
   $db = \Drupal::database();
@@ -87,13 +90,16 @@ function custom_general_features_update_11001(&$sandbox): string {
     foreach ($ids as $id) {
       $entity = $entities[$id] ?? NULL;
 
-      if ($entity === NULL) {
-        $entity = $storage->load($id);
-        if ($entity !== NULL) {
-          $entity->delete();
-        }
+      if (!$entity instanceof ContentEntityInterface) {
+        \Drupal::logger('custom_general_features')->warning('Could not load @type entity @id, skipping.', [
+          '@type' => $entity_type_id,
+          '@id' => $id,
+        ]);
+        $sandbox['processed']++;
+        continue;
       }
-      elseif ($entity_type_id === 'path_alias') {
+
+      if ($entity_type_id === 'path_alias') {
         // Path aliases store langcode as a direct field, not via Drupal's
         // translation API, so hasTranslation() does not apply. Delete directly.
         $entity->delete();
