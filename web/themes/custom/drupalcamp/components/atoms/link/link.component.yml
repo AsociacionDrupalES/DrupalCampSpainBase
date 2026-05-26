@@ -6,6 +6,8 @@ variants:
     title: Primary
   primary-light:
     title: Light primary
+  primary-medium:
+    title: Medium primary
   secondary:
     title: Secondary
   white:
