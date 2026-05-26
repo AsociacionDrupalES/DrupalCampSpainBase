@@ -92,6 +92,10 @@ msgid "Primary light"
 msgstr "Primario claro"
 
 #: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:32
+msgid "Primary medium"
+msgstr "Primario medio"
+
+#: modules/custom/custom_paragraphs_extras/src/Plugin/paragraphs/Behavior/ColorBehavior.php:33
 msgid "White"
 msgstr "Blanco"
 
