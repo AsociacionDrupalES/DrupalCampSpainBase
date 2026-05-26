@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.ticket.field_active
     - field.field.paragraph.ticket.field_link
     - field.field.paragraph.ticket.field_price
     - field.field.paragraph.ticket.field_text
@@ -16,6 +17,13 @@ targetEntityType: paragraph
 bundle: ticket
 mode: default
 content:
+  field_active:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_link:
     type: link_default
     weight: 2
