@@ -29,6 +29,7 @@ final class ColorBehavior extends ParagraphsBehaviorBase {
       'primary'       => $this->t('Primary'),
       'secondary'     => $this->t('Secondary'),
       'primary-light' => $this->t('Primary light'),
+      'primary-medium'=> $this->t('Primary medium'),
       'white'         => $this->t('White'),
       'disabled'      => $this->t('Disabled'),
     ];
