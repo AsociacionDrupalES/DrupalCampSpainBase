@@ -36,7 +36,7 @@ function drupalcamp_preprocess_page(array &$variables): void {
   $theme_handler = \Drupal::service('theme_handler');
   $theme_path = $theme_handler->getTheme($theme_handler->getDefault())->getPath();
 
-  $variables['page_title_image'] = '/' . $theme_path . '/images/page-title/default.webp';
+  $variables['page_title_image'] = '/' . $theme_path . '/images/page-title/Madrid.svg';
 
   $node = \Drupal::routeMatch()->getParameter('node');
   if (!$node instanceof NodeInterface || $node->bundle() === 'featured_speaker') {
