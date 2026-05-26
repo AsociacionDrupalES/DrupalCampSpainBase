@@ -1,7 +1,7 @@
 [data-component-id="drupalcamp:link"] a {
   --color-border: var(--color--primary);
   border: 1px solid var(--color-border);
-  border-radius: 7px;
+  border-radius: 50px;
   box-sizing: border-box;
   color: var(--color--primary);
   display: inline-block;
@@ -15,8 +15,7 @@
 
 [data-component-id="drupalcamp:link"] a:focus,
 [data-component-id="drupalcamp:link"] a:hover {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 [data-component-id="drupalcamp:link"].link--button--transparent a {
@@ -43,7 +42,13 @@
 [data-component-id="drupalcamp:link"].link--button--primary-light a {
   --color-border: var(--color--primary-light);
   background-color: var(--color--primary-light);
-  color: var(--color--background-primary-light);
+  color: var(--color--primary);
+}
+
+[data-component-id="drupalcamp:link"].link--button--primary-medium a {
+  --color-border: var(--color--primary-medium);
+  background-color: var(--color--primary-medium);
+  color: #fff;
 }
 
 [data-component-id="drupalcamp:link"].link--button--white a {
@@ -51,7 +56,6 @@
 }
 
 [data-component-id="drupalcamp:link"].link--button--disabled a {
-  background-color: var(--color--gray);
   cursor: not-allowed;
   pointer-events: none;
 }
