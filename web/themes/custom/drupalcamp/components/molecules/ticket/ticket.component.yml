@@ -19,6 +19,9 @@ props:
     link_variant:
       type: string
       title: Link variant
+    active:
+      type: boolean
+      title: Active
 slots:
   text:
     title: Text
