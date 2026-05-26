@@ -5,8 +5,8 @@
 
 .text-formatted ul li,
 .text-formatted ol li {
-  margin-bottom: 15px;
-  padding-left: 20px;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 
 .text-formatted ul li::marker {
