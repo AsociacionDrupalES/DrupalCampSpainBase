@@ -1,8 +1,7 @@
 ::selection {
-  background-color: var(--color--secondary);
+  background-color: var(--color--accent);
 }
 
-.component-background-color-secondary ::selection {
-  background-color: var(--color--primary);
-  color: #fff;
+.component-background-color-accent ::selection {
+  background-color: var(--color--accent);
 }
