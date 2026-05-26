@@ -32,7 +32,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Patrocinadores
+      title: PATROCINADORES
       fields:
         field_is_individual:
           id: field_is_individual
