@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.ticket.field_active
     - field.field.paragraph.ticket.field_link
     - field.field.paragraph.ticket.field_price
     - field.field.paragraph.ticket.field_text
@@ -20,6 +21,7 @@ third_party_settings:
         - field_price
         - field_link
         - field_text
+        - field_active
       label: Entrada
       parent_name: ''
       region: content
@@ -69,6 +71,16 @@ targetEntityType: paragraph
 bundle: ticket
 mode: default
 content:
+  field_active:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_link:
     type: link
     label: hidden
