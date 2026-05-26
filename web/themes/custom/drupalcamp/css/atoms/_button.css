@@ -1,7 +1,7 @@
 input.button,
 a.link--button {
   border: 1px solid var(--color--primary);
-  border-radius: 7px;
+  border-radius: 50px;
   color: var(--color--primary);
   display: inline-block;
   font-weight: 500;
@@ -16,8 +16,7 @@ input.button:focus,
 input.button:hover,
 a.link--button:focus,
 a.link--button:hover {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 input.button.link--button--transparent,
@@ -52,6 +51,13 @@ a.link--button.link--button--primary-light {
   background-color: var(--color--primary-light);
   border-color: var(--color--primary-light);
   color: var(--color--background-primary-light);
+}
+
+input.button.link--button--primary-medium,
+a.link--button.link--button--primary-medium {
+  background-color: var(--color--primary-medium);
+  border-color: var(--color--primary-medium);
+  color: var(--color--background-primary-medium);
 }
 
 input.button.link--button--white,
