@@ -10,18 +10,6 @@
   box-sizing: border-box;
 }
 
-.page-title:before {
-  background-color: rgba(0, 0, 0, 0.38);
-  content: '';
-  height: 100%;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  width: calc(100vw - var(--page-side-margin));
-  z-index: 0;
-}
-
 .page-title__content {
   margin: 0 auto;
   width: 100%;
