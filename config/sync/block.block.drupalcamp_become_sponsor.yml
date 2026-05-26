@@ -1,6 +1,6 @@
 uuid: 93eccc43-fe66-4e1e-9938-6f8385adf785
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - custom_general_features
