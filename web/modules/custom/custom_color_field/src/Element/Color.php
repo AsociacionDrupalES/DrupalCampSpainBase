@@ -60,10 +60,18 @@ class Color extends Radios {
       ],
       'primary-light' => [
         'title' => t('Light primary'),
-        'code'  => '#179ad7',
+        'code'  => '#e1f1f7',
+      ],
+      'primary-medium' => [
+        'title' => t('Medium primary'),
+        'code'  => '#006AA9',
       ],
       'secondary'     => [
         'title' => t('Secondary'),
+        'code'  => '#e5dff2',
+      ],
+      'accent'     => [
+        'title' => t('Accent'),
         'code'  => '#ecbe34',
       ],
       'gray'          => [
