@@ -115,6 +115,9 @@ settings:
           label: 'Botón secundario'
           element: '<a class="link--button link--button--secondary">'
         -
+          label: 'Botón primario medio'
+          element: '<a class="link--button link--button--primary-medium">'
+        -
           label: 'Botón primario claro'
           element: '<a class="link--button link--button--primary-light">'
         -
