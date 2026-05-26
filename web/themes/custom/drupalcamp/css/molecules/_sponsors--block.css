@@ -30,7 +30,7 @@
 .sponsors-logos .sponsor-level-group h3 {
   font-size: var(--font-size);
   line-height: var(--font-line-height);
-  width: 200px;
+  min-width: 200px;
 }
 
 .sponsors-logos .sponsor-level-group .sponsors {
@@ -40,7 +40,7 @@
   gap: 20px;
   padding-bottom: 25px;
   padding-top: 25px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .sponsors-logos .sponsor-level-group .sponsors a {
