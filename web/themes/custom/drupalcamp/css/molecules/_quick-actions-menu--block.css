@@ -15,6 +15,6 @@
   }
 
   #block-drupalcamp-quick-actions .menu .link--button:hover {
-    box-shadow: 0 0 8px 0 #00000080;
+    transform: scale(1.05);
   }
 }
