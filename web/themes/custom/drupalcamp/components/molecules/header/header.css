@@ -1,36 +1,41 @@
 .header {
   position: fixed;
-  top: calc(20px + var(--admin-toolbar-top-bar-height, 0px));
+  top: 1rem;
   left: calc(var(--page-side-margin) + var(--gutter-x));
   z-index: 100;
   padding: 10px var(--gutter-x);
-  border-radius: 20px;
-  background: white;
+  border-radius: 50px;
+  background: oklch(1 0 0 / 0.7);
   max-width: calc(100% - var(--page-side-margin) - var(--gutter-x) * 2);
   width: 100%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 0 10px 0 #00000033;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 4px 0 #22222217;
+}
+
+.logo {
+  display: flex;
 }
 
 @media (min-width: 768px) {
   .header {
-    top: calc(44px + var(--drupal-displace-offset-top, 0px));
+    top: 1.25rem;
   }
 }
 
 @media (min-width: 1200px) {
   .header {
-    padding: 16px 40px 16px 30px;
+    padding: 4px 16px 4px 12px;
     font-size: 0.9375rem;
   }
 }
 
 @media (min-width: 1360px) {
   .header {
-    left: calc(50% + var(--drupal-displace-offset-left, 0px) / 2);
+    left: 50%;
     right: 50%;
     transform: translateX(-50%);
     max-width: var(--max-width);
@@ -88,7 +93,6 @@
     background-color: #fff;
     box-shadow: 0 0 10px 0 #00000033;
     position: fixed;
-    top: var(--drupal-displace-offset-top, 0);
     right: 0;
     height: 100vh;
     transform: translateX(100%);
@@ -173,12 +177,12 @@
 .header .links a {
   color: var(--color--primary);
   text-decoration: none;
-  transition: text-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .header .header-menu a:hover,
 .header .links a:hover {
   color: var(--color--primary);
-  text-shadow: 0 0 1px var(--color--primary);
   text-decoration: underline;
 }
