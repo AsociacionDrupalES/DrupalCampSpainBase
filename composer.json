@@ -9,9 +9,10 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html"
     },
     "require": {
+        "amazeeio/drupal_integrations": "^0.5.0",
         "bower-asset/colorbox": "^1.6",
         "composer/installers": "^2.0",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2.0",
         "drupal/antibot": "^2.0",
         "drupal/backup_migrate": "^5.1",
         "drupal/colorbox": "^2.1",
@@ -25,6 +26,7 @@
         "drupal/extlink": "^2.0",
         "drupal/gin": "^5.0",
         "drupal/gin_login": "^2.1",
+        "drupal/lagoon_logs": "^3.0",
         "drupal/link_attributes": "^2.1",
         "drupal/linkit": "^7.0",
         "drupal/media_entity_download": "^2.4",
@@ -34,6 +36,7 @@
         "drupal/paragraphs": "^1.18",
         "drupal/r4032login": "^2.2",
         "drupal/redirect": "^1.11",
+        "drupal/redis": "^1.11",
         "drupal/schema_metatag": "^3.0",
         "drupal/simple_sitemap": "^4.2",
         "drupal/sitemap": "^2.0",
@@ -117,7 +120,13 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
-            }
+            },
+            "file-mapping": {
+                "[web-root]/sites/default/all.settings.php": "assets/all.settings.php"
+            },
+            "allowed-packages": [
+                "amazeeio/drupal_integrations"
+            ]
         },
         "installer-paths": {
             "web/core": [
