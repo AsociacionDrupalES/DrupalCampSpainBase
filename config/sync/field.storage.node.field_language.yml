@@ -17,9 +17,6 @@ settings:
     -
       value: en
       label: Inglés
-    -
-      value: gl
-      label: Gallego
   allowed_values_function: ''
 module: options
 locked: false
