@@ -119,7 +119,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 50
       placeholder: ''
     third_party_settings: {  }
   field_short_description:
