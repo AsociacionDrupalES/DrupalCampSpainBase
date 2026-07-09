@@ -59,8 +59,8 @@ content:
                                 type: entity_reference_entity_view
                                 settings:
                                   view_mode: gallery
-                              _weight: '0'
-                _weight: '0'
+                              _weight: 0
+                _weight: 0
     third_party_settings: {  }
     weight: 2
     region: content

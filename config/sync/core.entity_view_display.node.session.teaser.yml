@@ -134,7 +134,7 @@ content:
                       enabled: false
                       separator: '|'
                       referenced_entity: ''
-                _weight: '0'
+                _weight: 0
           url: {  }
     third_party_settings:
       nomarkup:
@@ -179,7 +179,7 @@ content:
                       enabled: true
                       separator: '|'
                       referenced_entity: ''
-                _weight: '0'
+                _weight: 0
           url: {  }
     third_party_settings:
       nomarkup:
@@ -226,7 +226,7 @@ content:
                       enabled: true
                       separator: ''
                       referenced_entity: ''
-                _weight: '0'
+                _weight: 0
           url: {  }
     third_party_settings:
       nomarkup:
