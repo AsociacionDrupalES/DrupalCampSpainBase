@@ -1300,7 +1300,7 @@ display:
       path: sessions/csv
       filename: sessions.csv
       automatic_download: true
-      store_in_public_file_directory: null
+      export_filesystem: public
       custom_redirect_path: false
       redirect_to_display: page_1
       include_query_params: false

@@ -41,7 +41,7 @@ content:
                   type: entity_reference_revisions_entity_view
                   settings:
                     view_mode: default
-                _weight: '0'
+                _weight: 0
     third_party_settings: {  }
     weight: 0
     region: content

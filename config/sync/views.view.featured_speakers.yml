@@ -235,7 +235,7 @@ display:
                       source_id: view_rows
                       source:
                         ui_patterns_views_field: ''
-                      _weight: '0'
+                      _weight: 0
       row:
         type: 'entity:node'
         options:
