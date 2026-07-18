@@ -14,3 +14,7 @@
   width: calc(100% - var(--page-side-margin));
   z-index: 100;
 }
+
+[data-drupal-messages]:has(.messages) {
+  margin-top: 7rem;
+}
