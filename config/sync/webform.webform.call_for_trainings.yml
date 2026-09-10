@@ -9,7 +9,7 @@ third_party_settings:
     antibot: true
 weight: 0
 open: null
-close: '2025-06-15T23:59:59'
+close: '2026-11-15T23:59:59'
 uid: 1
 template: false
 archive: false
@@ -93,6 +93,7 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_file_limit_message: ''
   form_attributes: {  }
   form_method: ''
   form_action: ''
