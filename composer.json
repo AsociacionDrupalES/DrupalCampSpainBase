@@ -10,12 +10,11 @@
     },
     "require": {
         "amazeeio/drupal_integrations": "^0.5.0",
-        "bower-asset/colorbox": "^1.6",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^2.0",
         "drupal/antibot": "^2.0",
         "drupal/backup_migrate": "^5.1",
-        "drupal/colorbox": "^2.1",
+        "drupal/colorbox": "^2.2",
         "drupal/complete_webform_exporter": "^1.0",
         "drupal/config_ignore": "^3.3",
         "drupal/config_readonly": "^1.0",
@@ -52,7 +51,8 @@
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.3",
-        "oomphinc/composer-installers-extender": "^2.0.0"
+        "oomphinc/composer-installers-extender": "^2.0.0",
+        "turbojettechnologies/colorbox": "^1.7"
     },
     "require-dev": {
         "drupal/core-dev": "^11.0",
@@ -77,6 +77,18 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "turbojettechnologies/colorbox",
+                "version": "1.7.0",
+                "type": "drupal-library",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/TurbojetTechnologies/colorbox/archive/refs/tags/1.7.0.zip"
+                }
+            }
         }
     ],
     "minimum-stability": "beta",
