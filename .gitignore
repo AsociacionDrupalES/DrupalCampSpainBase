@@ -48,3 +48,10 @@
 
 /backups
 /.drush-lock-update
+
+# OS files
+.DS_Store
+
+# Databases
+*.sql
+*.sql.gz
