@@ -5,7 +5,9 @@
     {% if name %}
       <div class="name">{{ name }}</div>
     {% endif %}
-    {#<div class="text">{{ text }}</div>#}
+    {% if variant == 'horizontal' %}
+      <div class="text">{{ text }}</div>
+    {% endif %}
     {% if link %}
       <div class="link"><a href="{{ link }}" class="link--arrow">{{ 'Learn more' | t }}</a></div>
     {% endif %}
