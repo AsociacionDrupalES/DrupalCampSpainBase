@@ -3,7 +3,7 @@ display:
     display_options:
       header:
         result:
-          content: '<div class="results-summary"><strong>Results:</strong> @total proposals</div>'
+          content: '<div class="results-summary"><strong>Results:</strong> @total proposals <em>pending selection</em></div>'
         propose_session_link:
           label: 'Propose a session'
       footer:
