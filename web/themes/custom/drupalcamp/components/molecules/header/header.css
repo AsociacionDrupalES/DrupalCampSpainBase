@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  top: 1rem;
+  top: calc(var(--drupal-displace-offset-top, 0px) + 1rem);
   left: calc(var(--page-side-margin) + var(--gutter-x));
   z-index: 100;
   padding: 10px var(--gutter-x);
@@ -22,7 +22,7 @@
 
 @media (min-width: 768px) {
   .header {
-    top: 1.25rem;
+    top: calc(var(--drupal-displace-offset-top, 0px) + 1.25rem);
   }
 }
 
