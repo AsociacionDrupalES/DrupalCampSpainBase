@@ -26,6 +26,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .header {
+    top: calc(var(--drupal-displace-offset-top, 0px) + 1.25rem);
+  }
+}
+
 @media (min-width: 1200px) {
   .header {
     padding: 4px 16px 4px 12px;

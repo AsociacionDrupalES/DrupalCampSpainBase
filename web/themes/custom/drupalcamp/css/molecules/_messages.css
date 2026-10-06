@@ -14,3 +14,18 @@
   width: calc(100% - var(--page-side-margin));
   z-index: 100;
 }
+
+[data-drupal-messages] {
+  max-width: var(--max-width);
+  margin: 1.5rem auto 0;
+}
+
+main:not(:has(> .page-title)) [data-drupal-messages] {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 1024px) {
+  main:not(:has(> .page-title)) [data-drupal-messages] {
+    margin-top: calc(var(--drupal-displace-offset-top, 0px) + 7.5rem);
+  }
+}
