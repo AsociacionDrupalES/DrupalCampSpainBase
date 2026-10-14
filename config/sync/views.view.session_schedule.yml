@@ -494,9 +494,9 @@ display:
             argument: ''
           summary_options:
             base_path: sessions/schedule
-            count: 0
-            override: 0
-            items_per_page: '25'
+            count: false
+            override: false
+            items_per_page: 25
             classes: ''
           summary:
             sort_order: asc
@@ -587,7 +587,7 @@ display:
           title: ''
           default_argument_type: date_token
           default_argument_options:
-            token: '[config_page:event_details:field_dates:value]'
+            token: '2026-11-20'
           summary_options:
             base_path: ''
             count: true
