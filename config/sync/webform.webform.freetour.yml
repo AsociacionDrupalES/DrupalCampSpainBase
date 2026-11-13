@@ -15,7 +15,7 @@ categories: {  }
 elements: |-
   info:
     '#type': processed_text
-    '#text': '<h2>¡Descubre el Madrid más oscuro!</h2><p><strong>¿Te atreves a conocer los crímenes y misterios que marcaron la historia de Madrid?&nbsp;</strong></p><p>Con motivo de la <strong>DrupalCamp Spain 2026</strong>, hemos organizado una actividad cultural para descubrir la cara más misteriosa de la capital.</p><p>&nbsp;</p><h3>Free Tour: La Crónica Negra de Madrid – ¡Madrid Oscuro!</h3><p>&nbsp;</p><p><strong>Fecha:</strong> Viernes, 20 de noviembre de 2026</p><p><strong>Hora:</strong> A partir de las 20:00 h</p><p><strong>Precio:</strong> 15 € por persona, que deberás llevar contigo para abonar al finalizar el recorrido.</p><p>Durante el tour recorreremos las calles de Madrid mientras descubrimos historias de crímenes, sucesos inquietantes y acontecimientos que la ciudad nunca pudo olvidar.</p><p>Una oportunidad perfecta para conocer Madrid de una forma diferente y compartir una experiencia con otros asistentes a DrupalCamp Spain 2026.</p><p>&nbsp;</p><h3>¿Te gustaría participar?</h3><p>&nbsp;</p><p><strong>¡Apúntate y acompáñanos en esta experiencia!&nbsp;</strong></p><p>&nbsp;</p><p><img src="/sites/default/files/media/image/2026/11/freetour.png" alt="freetour" width="1671" height="941"></p>'
+    '#text': '<h2>¡Descubre el Madrid más oscuro!</h2><p><strong>¿Te atreves a conocer los crímenes y misterios que marcaron la historia de Madrid?&nbsp;</strong></p><p>Con motivo de la <strong>DrupalCamp Spain 2026</strong>, hemos organizado una actividad cultural para descubrir la cara más misteriosa de la capital.</p><p>&nbsp;</p><h3>Tour guiado: La Crónica Negra de Madrid – ¡Madrid Oscuro!</h3><p>&nbsp;</p><p><strong>Fecha:</strong> Viernes, 20 de noviembre de 2026</p><p><strong>Hora:</strong> A partir de las 20:00 h</p><p><strong>Precio:</strong> 15 € por persona, que deberás llevar contigo para abonar al finalizar el recorrido.</p><p>Durante el tour recorreremos las calles de Madrid mientras descubrimos historias de crímenes, sucesos inquietantes y acontecimientos que la ciudad nunca pudo olvidar.</p><p>Una oportunidad perfecta para conocer Madrid de una forma diferente y compartir una experiencia con otros asistentes a DrupalCamp Spain 2026.</p><p>&nbsp;</p><h3>¿Te gustaría participar?</h3><p>&nbsp;</p><p><strong>¡Apúntate y acompáñanos en esta experiencia!&nbsp;</strong></p><p>&nbsp;</p><p><img src="/sites/default/files/media/image/2026/11/tour-guiado-img.png" alt="freetour" width="1671" height="941"></p>'
     '#format': full_html
   nombre_y_apellidos:
     '#type': textfield
@@ -34,7 +34,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /tour-guiado
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both
